@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 const Problem = () => {
   return (
@@ -22,9 +23,9 @@ const Problem = () => {
             className="rounded-lg"
           />
         </div>
-        <div className="flex flex-col gap-10 justify-start items-start">
-          <h3>
-            Struggling to find <span>clients</span>?
+        <div className="flex flex-col gap-16 justify-start items-start">
+          <h3 className="text-3xl font-bold">
+            Struggling to find <span className="text-[#2580eb]">clients</span>?
           </h3>
           <p>
             Blandit aliquam etiam. Ligula ullamcorper malesuada proin libero
@@ -34,9 +35,11 @@ const Problem = () => {
             nam at lectus. Dolor magna eget est lorem ipsum dolor sit. Mauris
             rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.
           </p>
-          <button className="font-bold bg-[#2580eb] text-white px-6 py-4 rounded-md shadow-lg">
-            Find out how we can help
-          </button>
+          <Button
+            variant="normal"
+            text="Find out how we can help"
+            url="/contact"
+          />
         </div>
       </div>
     </section>

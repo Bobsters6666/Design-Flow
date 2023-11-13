@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -21,12 +22,8 @@ const Hero = () => {
             website that your clients love and trust.{" "}
           </p>
           <div className="flex items-center gap-10">
-            <button className="font-bold bg-[#2580eb] text-white px-6 py-4 rounded-md shadow-lg">
-              Chat with us now
-            </button>
-            <button className="font-bold border-2 border-[#2580eb] px-6 py-4 rounded-md shadow-sm text-[#2580eb]">
-              View our work
-            </button>
+            <Button variant="normal" text="Chat with us now" url="/contact" />
+            <Button variant="ghost" text="View our work" url="/gallery" />
           </div>
         </div>
 
@@ -42,7 +39,7 @@ const Hero = () => {
       </div>
 
       <div className="mt-[85vh] bg-white px-8 py-4 rounded-md">
-        <div className="max-w-[1000px] mx-auto">Google</div>
+        <div className="max-w-[1000px] mx-auto"></div>
       </div>
     </section>
   );

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inria_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inriaSans = Inria_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Design Flow - Web Design",
@@ -17,9 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative grainy`}>
+      <body className={`${inriaSans.className} relative grainy`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

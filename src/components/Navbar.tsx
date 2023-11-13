@@ -3,9 +3,11 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="max-w-[1440px] mx-auto bg-white sticky rounded-md z-30">
+    <nav className="max-w-[1440px] mx-auto bg-white/75 sticky top-0 backdrop-blur-lg rounded-md z-30">
       <div className="flex justify-between items-center px-8 py-4">
-        <div className="text-xl font-bold">Design Flow</div>
+        <div className="text-xl font-bold">
+          <Link href={"/"}>Design Flow</Link>
+        </div>
         <ul className="flex justify-center items-center gap-12">
           <Link href={"/services"}>Services</Link>
           <Link href={"/gallery"}>Gallery</Link>
