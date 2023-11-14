@@ -2,42 +2,42 @@ export const ProcessesInfo = [
   {
     title: "Preliminary Discussion",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "In the Preliminary Discussion phase, our journey begins with a collaborative exchange of ideas. We engage in in-depth conversations to comprehend your unique goals, preferences, and the essence of your brand. Your input is invaluable, guiding us to understand the specific features, functionalities, and design elements you envision for your website. Through open communication, we establish a solid foundation, defining the scope of the project and setting clear expectations. This phase is pivotal, laying the groundwork for a seamless and successful collaboration.",
     image: "/process1.jpg",
     imagePosition: "right",
   },
   {
     title: "Business Strategy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "The Business Strategy phase involves a meticulous exploration of your industry landscape. Our team conducts comprehensive market research to stay abreast of current trends, ensuring that your website remains relevant and user-centric. We delve into a detailed analysis of your competitors, identifying opportunities and crafting a strategy that positions your brand uniquely. Strategic planning is at the forefront, mapping out the structure, content, and design elements that will propel your website toward success.",
     image: "/process2.jpg",
     imagePosition: "left",
   },
   {
     title: "Minimum Viable Product",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "As we transition into the Minimum Viable Product (MVP) phase, our focus shifts to tangible progress. Through prototyping, we provide you with a visual preview of your website's layout and functionality. This prototype serves as a dynamic blueprint, allowing you to interact with key features and provide valuable feedback. The development process kicks into gear, with our skilled team building the core components of your website. This iterative approach ensures that we align closely with your vision while maintaining flexibility for adjustments and enhancements.",
     image: "/process3.jpg",
     imagePosition: "right",
   },
   {
     title: "Testing & Revision",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "Rigorous Testing & Revision are paramount to delivering a polished and reliable website. We conduct thorough quality assurance checks, scrutinizing every aspect of functionality, performance, and compatibility. Your feedback is actively sought and integrated, ensuring that the website meets and exceeds your expectations. This collaborative refinement process guarantees a seamless user experience and lays the groundwork for a website that resonates with your audience.",
     image: "/process4.jpg",
     imagePosition: "left",
   },
   {
     title: "Final Touches",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "The Final Touches phase is where the vision transforms into reality. With meticulous attention to detail, we add the finishing elements that elevate your website to its full potential. From fine-tuning design aesthetics to optimizing performance, we leave no stone unturned. This phase marks the transition from development to deployment, preparing your website for its grand unveiling to the online world.",
     image: "/process5.jpg",
     imagePosition: "right",
   },
   {
     title: "Website Maintenance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Maecenas volutpat blandit aliquam etiam. Ligula ullamcorper malesuada proin libero nunc. Nulla pellentesque dignissim enim sit amet. Est placerat in egestas erat imperdiet sed euismod nisi. Mattis rhoncus urna neque viverra. Non curabitur gravida arcu ac tortor.",
+      "Website Maintenance is an ongoing commitment to ensuring your online presence remains vibrant and effective. Regular updates, security checks, and performance optimizations are executed to keep your website at the forefront of technology. Continuous collaboration ensures that your site evolves in tandem with your business, adapting to changing needs and leveraging emerging opportunities. Our commitment to maintenance ensures your website stays not only functional but also ahead of the curve in an ever-evolving digital landscape.",
     image: "/process6.jpg",
     imagePosition: "left",
   },

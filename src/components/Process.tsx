@@ -20,23 +20,23 @@ const Process = ({
   return (
     <div>
       <div
-        className={`flex gap-24 relative ${
-          imagePosition == "right" ? "flex-row-reverse" : ""
-        } z-10 mb-44`}
+        className={`flex px-8 gap-24 relative z-10 mb-56 items-center justify-center flex-col-reverse xl:flex-row xl:${
+          imagePosition === "right" ? "flex-row-reverse" : ""
+        }`}
       >
         <div className="flex flex-col gap-12 items-start ">
-          <h3 className="text-black font-bold text-2xl mt-8">{title}</h3>
+          <h3 className="text-black font-bold text-2xl">{title}</h3>
           <p className="leading-[30px]">{description}</p>
           <Button variant="normal" text="Work with us" url="/contact" />
         </div>
 
-        <div className="shrink-0 rounded-md border-2 border-[#2580eb] border-opacity-[50%] shadow-2xl">
+        <div className="rounded-md border-2 w-fit h-fit mx-auto border-[#2580eb] border-opacity-[50%] shadow-2xl">
           <Image
             src={image}
             alt={image}
             width={1000}
             height={1000}
-            className="max-w-[550px] max-h-[650px] m-2 rounded-md"
+            className="xl:max-w-[550px] rounded-md"
           />
         </div>
 

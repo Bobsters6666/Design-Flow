@@ -10,7 +10,7 @@ interface buttonProps {
 const Button = ({ text, variant, url }: buttonProps) => {
   return (
     <button
-      className={`px-6 py-4 transition-all hover:-translate-y-1 hover:shadow-2xl hover:opacity-80 ${
+      className={`px-6 py-4 transition ease-in-out duration-250 hover:-translate-y-0.5 hover:shadow-2xl hover:bg-opacity-80 ${
         variant == "normal"
           ? "font-bold bg-[#2580eb] text-white  rounded-md shadow-lg"
           : "font-bold border-2 border-[#2580eb]  rounded-md shadow-sm text-[#2580eb]"
