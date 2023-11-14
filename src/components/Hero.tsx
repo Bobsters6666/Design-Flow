@@ -6,9 +6,19 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
-const Hero = () => {
-  const kitchen = useLoader(GLTFLoader, "/kitchen/scene.gltf");
+const Kitchen = () => {
+  const gltf = useLoader(GLTFLoader, "/kitchen/scene.gltf");
 
+  return (
+    <group>
+      <OrbitControls />
+      <primitive object={gltf.scene} position={[1, 0, 0]} />
+      <Environment preset={"city"} />
+    </group>
+  );
+};
+
+const Hero = () => {
   return (
     <section className="max-w-[1440px] mx-auto relative xl:pt-[300px]  ">
       <div className="flex flex-col-reverse xl:flex-row relative z-10 items-center gap-20">
@@ -38,11 +48,7 @@ const Hero = () => {
             camera={{ position: [10, 3, 4] }}
             style={{ height: "500px", width: "500px" }}
           >
-            <group>
-              <OrbitControls />
-              <primitive object={kitchen.scene} position={[1, 0, 0]} />
-              <Environment preset={"city"} />
-            </group>
+            <Kitchen />
           </Canvas>
         </div>
       </div>
