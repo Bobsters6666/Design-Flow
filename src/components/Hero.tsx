@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Button from "./Button";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { OrbitControls, Environment } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
 const Hero = () => {
-  const kitchen = useGLTF("/kitchen/scene.gltf");
+  const kitchen = useLoader(GLTFLoader, "/kitchen/scene.gltf");
 
   return (
     <section className="max-w-[1440px] mx-auto relative xl:pt-[300px]  ">
@@ -38,11 +38,11 @@ const Hero = () => {
             camera={{ position: [10, 3, 4] }}
             style={{ height: "500px", width: "500px" }}
           >
-            <>
+            <group>
               <OrbitControls />
-              <primitive object={kitchen.scene} />
+              <primitive object={kitchen.scene} position={[1, 0, 0]} />
               <Environment preset={"city"} />
-            </>
+            </group>
           </Canvas>
         </div>
       </div>
