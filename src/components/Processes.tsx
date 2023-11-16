@@ -1,6 +1,6 @@
 import React from "react";
-import Process from "./Process";
 import { ProcessesInfo } from "@/constants";
+import SingleProcess from "./SingleProcess";
 
 const Processes = () => {
   const filteredProcessInfo = ProcessesInfo.filter(
@@ -14,13 +14,14 @@ const Processes = () => {
           Explore our <span className="text-[#2580eb]">Process</span>
         </h2>
         {filteredProcessInfo.map((process, i) => (
-          <Process
+          <SingleProcess
             key={process.title}
             title={process.title}
             description={process.description}
             image={process.image}
             imagePosition={process.imagePosition}
             index={i}
+            showFullProcessButton={true}
           />
         ))}
       </div>

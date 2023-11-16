@@ -10,8 +10,9 @@ const Footer = () => {
           <div className="flex flex-col items-start justify-start xl:gap-12 gap-8">
             <div className="text-3xl font-bold">Design Flow</div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit, sed do eiusmod tempor.
+              Serving interior designers and home
+              <br />
+              stagers since 2023.
             </p>
             <div></div>
           </div>
@@ -20,6 +21,7 @@ const Footer = () => {
             <Link href="/services">Services</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/process">Process</Link>
           </div>
           <div className="flex flex-col items-start justify-start xl:gap-12 gap-8">
             <h4 className="text-lg font-bold">Others</h4>

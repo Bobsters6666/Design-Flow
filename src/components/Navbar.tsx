@@ -19,22 +19,28 @@ const Navbar = () => {
           <Link href={"/"}>Design Flow</Link>
         </div>
         <ul
-          className={`flex flex-col md:flex-row justify-center items-center gap-12 my-16 md:my-0 animate__slideInDown  ${
+          className={`${
             isMenuOpen
-              ? "absolute bg-white h-screen w-screen top-0 left-0"
+              ? "absolute bg-white h-screen w-screen top-0 left-0 flex"
               : "hidden"
-          }`}
+          } md:flex flex-col md:flex-row justify-center items-center gap-12 my-16 md:my-0 animate__slideInDown `}
         >
           <li>
-            <Link href={"/services"}>Services</Link>
+            <Link onClick={() => setIsMenuOpen(false)} href={"/services"}>
+              Services
+            </Link>
           </li>
           <li>
             <Link href={"/gallery"}>Gallery</Link>
           </li>
           <li>
-            <Link href={"/contact"}>Contact</Link>
+            <Link onClick={() => setIsMenuOpen(false)} href={"/contact"}>
+              Contact
+            </Link>
           </li>
-          <Button text="Get a Free Design" variant="normal" url="/contact" />
+          <li onClick={() => setIsMenuOpen(false)}>
+            <Button text="Get a Free Design" variant="normal" url="/contact" />
+          </li>
         </ul>
 
         <div

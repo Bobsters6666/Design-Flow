@@ -8,20 +8,22 @@ interface ProcessProps {
   image: string;
   imagePosition: string;
   index: number;
+  showFullProcessButton: boolean;
 }
 
-const Process = ({
+const SingleProcess = ({
   title,
   description,
   image,
   imagePosition,
   index,
+  showFullProcessButton,
 }: ProcessProps) => {
   return (
     <div>
       <div
-        className={`flex px-8 gap-24 relative z-10 mb-56 items-center justify-center flex-col-reverse xl:flex-row xl:${
-          imagePosition === "right" ? "flex-row-reverse" : ""
+        className={`flex px-8 gap-24 relative z-10 mb-56 items-center justify-center flex-col-reverse lg:flex-row lg:${
+          imagePosition === "right" ? "flex-row-reverse" : "flex-row"
         }`}
       >
         <div className="flex flex-col gap-12 items-start ">
@@ -36,14 +38,14 @@ const Process = ({
             alt={image}
             width={1000}
             height={1000}
-            className="xl:max-w-[550px] rounded-md"
+            className="lg:max-w-[550px] rounded-md"
           />
         </div>
 
         <div className="absolute w-[512px] h-[512px] blur-3xl bg-violet-300 opacity-[15%] pointer-events-none z-0"></div>
       </div>
 
-      {index === 1 ? (
+      {index === 1 && showFullProcessButton ? (
         <div className="flex flex-col gap-16 items-center justify-center mb-36">
           <div className="w-5 h-5 rounded-full shadow-sm bg-blue-300"></div>
           <div className="w-5 h-5 rounded-full shadow-sm bg-blue-400"></div>
@@ -60,4 +62,4 @@ const Process = ({
   );
 };
 
-export default Process;
+export default SingleProcess;
