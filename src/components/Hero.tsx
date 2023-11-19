@@ -5,6 +5,8 @@ import Button from "./Button";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
+import { motion } from "framer-motion";
+import { fadeDownInView } from "@/utils/animations";
 
 const Kitchen = () => {
   const gltf = useLoader(GLTFLoader, "/kitchen/scene.gltf");
@@ -20,10 +22,13 @@ const Kitchen = () => {
 
 const Hero = () => {
   return (
-    <section className="max-w-[1440px] mx-auto relative xl:pt-[300px]  ">
-      <div className="flex flex-col-reverse xl:flex-row relative z-10 items-center gap-20">
+    <section className="max-w-[1440px] mx-auto relative xl:pt-[300px] ">
+      <div className="flex flex-col-reverse xl:flex-row relative z-10 items-center xl:gap-20">
         <div className="flex flex-col gap-16 pt-[75px] xl:shrink-0 px-4 xl:px-0">
-          <h1 className="text-4xl font-bold leading-[135%] xl:text-7xl xl:p-0 ">
+          <motion.h1
+            {...fadeDownInView()}
+            className="text-4xl font-bold leading-[135%] xl:text-7xl xl:p-0 "
+          >
             Build an online reputation <br />
             that actually{" "}
             <span className="text-[#2580eb]">
@@ -31,7 +36,7 @@ const Hero = () => {
               clients
             </span>
             .
-          </h1>
+          </motion.h1>
           <p className="text-[20px]">
             Our team at Design Flow focus on help you tailor your interior
             design and home decor <br />

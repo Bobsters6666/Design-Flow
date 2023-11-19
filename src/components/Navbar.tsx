@@ -6,6 +6,7 @@ import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const ulRef = useRef();
@@ -18,30 +19,48 @@ const Navbar = () => {
         <div className="text-xl font-bold">
           <Link href={"/"}>Design Flow</Link>
         </div>
-        <ul
-          className={`${
-            isMenuOpen
-              ? "absolute bg-white h-screen w-screen top-0 left-0 flex"
-              : "hidden"
-          } md:flex flex-col md:flex-row justify-center items-center gap-12 my-16 md:my-0 animate__slideInDown `}
-        >
-          <li>
-            <Link onClick={() => setIsMenuOpen(false)} href={"/services"}>
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link href={"/gallery"}>Gallery</Link>
-          </li>
-          <li>
-            <Link onClick={() => setIsMenuOpen(false)} href={"/contact"}>
-              Contact
-            </Link>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <Button text="Get a Free Design" variant="normal" url="/contact" />
-          </li>
-        </ul>
+
+        <AnimatePresence>
+          <motion.ul
+            key={"ul"}
+            initial={{ y: "-100vh", opacity: 0.3 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 1,
+              ease: "easeIn",
+            }}
+            exit={{ y: "-100vh", opacity: 1 }}
+            className={`${
+              isMenuOpen
+                ? "absolute bg-white h-screen w-screen top-0 left-0 flex"
+                : "hidden"
+            } md:flex flex-col md:flex-row justify-center items-center gap-12 my-16 md:my-0 animate__slideInDown `}
+          >
+            <li>
+              <Link onClick={() => setIsMenuOpen(false)} href={"/services"}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setIsMenuOpen(false)} href={"/gallery"}>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setIsMenuOpen(false)} href={"/contact"}>
+                Contact
+              </Link>
+            </li>
+            <li onClick={() => setIsMenuOpen(false)}>
+              <Button
+                text="Get a Free Design"
+                variant="normal"
+                url="/contact"
+              />
+            </li>
+          </motion.ul>
+        </AnimatePresence>
 
         <div
           onClick={() => setIsMenuOpen(true)}

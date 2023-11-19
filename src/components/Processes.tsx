@@ -10,7 +10,7 @@ const Processes = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h2 className="text-center font-bold text-4xl mb-36">
+        <h2 className="text-center font-bold text-4xl xl:mb-36 mb-16">
           Explore our <span className="text-[#2580eb]">Process</span>
         </h2>
         {filteredProcessInfo.map((process, i) => (

@@ -18,7 +18,7 @@ const Form = () => {
           <br />
           We'll reply <span className="text-[#2580eb]">same day</span>!
         </h2>
-        <div className="flex flex-col xl:flex-row justify-center items-start gap-16 xl:gap-32 mt-36 mb-40">
+        <div className="flex flex-col xl:flex-row justify-center items-start gap-16 xl:gap-32 xl:mt-36 xl:mb-40 mt-16 mb-24">
           <div className="border-2 border-[#2580eb] border-opacity-50 shadow-xl rounded-md">
             <Image
               src="/process3.jpg"

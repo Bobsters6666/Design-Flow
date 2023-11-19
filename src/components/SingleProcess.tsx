@@ -22,7 +22,7 @@ const SingleProcess = ({
   return (
     <div>
       <div
-        className={`flex px-8 gap-24 relative z-10 mb-56 items-center justify-center flex-col-reverse lg:flex-row lg:${
+        className={`flex px-8 gap-24 relative z-10 xl:mb-56 mb-32 items-center justify-center flex-col-reverse lg:flex-row lg:${
           imagePosition === "right" ? "flex-row-reverse" : "flex-row"
         }`}
       >

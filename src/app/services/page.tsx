@@ -7,10 +7,10 @@ import Banner from "@/components/Banner";
 
 const Services = () => {
   return (
-    <section className="px-8 xl:px-0 relative z-10 grid">
+    <section className=" relative z-10 grid">
       <Banner text="Our Services" />
 
-      <div>
+      <div className="px-8 xl:px-0">
         <p className="text-center font-bold opacity-60 mt-24 mb-2">
           Our Services
         </p>

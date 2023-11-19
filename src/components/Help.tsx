@@ -4,7 +4,7 @@ const Help = () => {
   return (
     <section className="bg-black my-36">
       <div className="max-w-[1440px] mx-auto text-white flex flex-col items-center">
-        <p className="xl:text-7xl lg:text-5xl text-3xl px-10 py-8 xl:leading-[100px] lg:leading-[80px] leading-[55px] font-bold">
+        <p className="xl:text-7xl lg:text-5xl text-[28px] px-10 py-8 xl:leading-[100px] lg:leading-[80px] leading-[55px] font-bold">
           Don't Worry, <br />{" "}
           <span className="ml-10 text-center">Design Flow is here to help</span>
         </p>

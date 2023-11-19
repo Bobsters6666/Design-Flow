@@ -1,21 +1,21 @@
 export const ProblemsInfo = [
   {
-    title: "Struggling to find clients.",
+    title: "Struggling to find clients",
     description:
       "Are you an interior designer or home stager struggling to secure the clients your talent deserves? In a competitive industry where first impressions matter, a compelling online presence can make all the difference. At Design Flow, we understand the unique challenges of the design world. Our expert team is dedicated to crafting websites that not only showcase your aesthetic prowess but also strategically position you to attract your ideal client. Let us transform your online presence, so you can focus on what you do best – creating stunning spaces.",
     image: "/process1.jpg",
   },
   {
-    title: "Struggling to find clients.",
+    title: "Dissapointing experiences with other agencies",
     description:
       "Are you an interior designer or home stager struggling to secure the clients your talent deserves? In a competitive industry where first impressions matter, a compelling online presence can make all the difference. At Design Flow, we understand the unique challenges of the design world. Our expert team is dedicated to crafting websites that not only showcase your aesthetic prowess but also strategically position you to attract your ideal client. Let us transform your online presence, so you can focus on what you do best – creating stunning spaces.",
-    image: "/process2.jpg",
+    image: "/process5.jpg",
   },
   {
-    title: "Struggling to find clients.",
+    title: "Overwhelmed by maintenance cost",
     description:
       "Are you an interior designer or home stager struggling to secure the clients your talent deserves? In a competitive industry where first impressions matter, a compelling online presence can make all the difference. At Design Flow, we understand the unique challenges of the design world. Our expert team is dedicated to crafting websites that not only showcase your aesthetic prowess but also strategically position you to attract your ideal client. Let us transform your online presence, so you can focus on what you do best – creating stunning spaces.",
-    image: "/process3.jpg",
+    image: "/process4.jpg",
   },
 ];
 

@@ -17,20 +17,20 @@ const Footer = () => {
             <div></div>
           </div>
           <div className="flex flex-col items-start justify-start xl:gap-12 gap-8">
-            <h4 className="text-lg font-bold">Pages</h4>
+            <div className="text-lg font-bold">Pages</div>
             <Link href="/services">Services</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/process">Process</Link>
           </div>
           <div className="flex flex-col items-start justify-start xl:gap-12 gap-8">
-            <h4 className="text-lg font-bold">Others</h4>
+            <div className="text-lg font-bold">Others</div>
             <Link href="/services">Privacy Policies</Link>
             <Link href="/gallery">Terms & Conditions</Link>
             <Link href="/contact">Refund Policy</Link>
           </div>
           <div className="flex flex-col items-start justify-start xl:gap-12 gap-8">
-            <h4 className="text-lg font-bold">Subscribe to our newsletter</h4>
+            <div className="text-lg font-bold">Subscribe to our newsletter</div>
             <form>
               <input
                 placeholder="Email address"
