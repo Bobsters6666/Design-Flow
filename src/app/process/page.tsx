@@ -16,6 +16,7 @@ const Process = () => {
           <SingleProcess
             key={process.title}
             title={process.title}
+            alt={process.alt}
             description={process.description}
             image={process.image}
             imagePosition={process.imagePosition}
