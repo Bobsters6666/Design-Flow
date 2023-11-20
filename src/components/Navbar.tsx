@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -9,9 +9,6 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
-  const ulRef = useRef();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
