@@ -5,7 +5,10 @@ import { useState, useEffect } from "react";
 import Button from "./Button";
 import { ProblemsInfo } from "@/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowCircleDown,
+  faArrowCircleUp,
+} from "@fortawesome/free-solid-svg-icons";
 import { motion, useAnimate } from "framer-motion";
 import { fadeDownInView } from "@/utils/animations";
 
@@ -76,7 +79,7 @@ const Problem = () => {
             <div className="rounded-lg border-2 border-[#2580eb] border-opacity-[40%] flex-1 ">
               <Image
                 src={problem.image}
-                alt={problem.image}
+                alt={problem.alt}
                 width={5568}
                 height={3712}
                 className={`rounded-lg lg:max-w-[650px] shrink-1`}
@@ -102,15 +105,15 @@ const Problem = () => {
       {/* arrows */}
       <FontAwesomeIcon
         onClick={handleNext}
-        icon={faArrowUp}
+        icon={faArrowCircleUp}
         size="2x"
-        className="absolute left-6 top-20 md:bottom-0 opacity-60 text-[#2580eb] hover:opacity-80 hover:cursor-pointer"
+        className="absolute left-6 top-28 md:bottom-0 opacity-80 text-[#2580eb] hover:opacity-80 hover:cursor-pointer"
       />
       <FontAwesomeIcon
         onClick={handleBack}
-        icon={faArrowDown}
+        icon={faArrowCircleDown}
         size="2x"
-        className="absolute right-6 top-20 md:bottom-0 opacity-60 text-[#2580eb] hover:opacity-80 hover:cursor-pointer"
+        className="absolute right-6 top-28 md:bottom-0 opacity-80 text-[#2580eb] hover:opacity-80 hover:cursor-pointer"
       />
     </section>
   );

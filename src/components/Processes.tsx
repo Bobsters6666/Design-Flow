@@ -20,6 +20,7 @@ const Processes = () => {
             description={process.description}
             image={process.image}
             imagePosition={process.imagePosition}
+            alt={process.alt}
             index={i}
             showFullProcessButton={true}
           />

@@ -7,6 +7,7 @@ interface ProcessProps {
   description: string;
   image: string;
   imagePosition: string;
+  alt: string;
   index: number;
   showFullProcessButton: boolean;
 }
@@ -16,6 +17,7 @@ const SingleProcess = ({
   description,
   image,
   imagePosition,
+  alt,
   index,
   showFullProcessButton,
 }: ProcessProps) => {
@@ -35,7 +37,7 @@ const SingleProcess = ({
         <div className="rounded-md border-2 w-fit h-fit mx-auto border-[#2580eb] border-opacity-[50%] shadow-2xl">
           <Image
             src={image}
-            alt={image}
+            alt={alt}
             width={1000}
             height={1000}
             className="lg:max-w-[550px] rounded-md"

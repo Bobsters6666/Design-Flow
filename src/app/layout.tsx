@@ -10,8 +10,9 @@ const inriaSans = Inria_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Design Flow - Web Design",
-  description: "Modern website design for interior designers and home stagers",
+  title: "Design Flow - Web Design For Interior Designers",
+  description:
+    "Modern website design for interior designers and home stagers. An reputable online presence is crucial for interior designers and home stagers.",
 };
 
 export default function RootLayout({

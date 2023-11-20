@@ -21,7 +21,7 @@ const Form = () => {
         <div className="flex flex-col xl:flex-row justify-center items-start gap-16 xl:gap-32 xl:mt-36 xl:mb-40 mt-16 mb-24">
           <div className="border-2 border-[#2580eb] border-opacity-50 shadow-xl rounded-md">
             <Image
-              src="/process3.jpg"
+              src="/form.jpg"
               alt="woman holding book with coffee"
               width={1000}
               height={1000}
@@ -79,7 +79,7 @@ const Form = () => {
                 htmlFor="acquiring_clients"
                 className="font-bold text-[17px]"
               >
-                What's your main way of acquiring clients?
+                Anything else you want us to know.
               </label>
               <textarea
                 placeholder="Message"

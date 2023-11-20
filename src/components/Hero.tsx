@@ -37,9 +37,11 @@ const Hero = () => {
             </span>
             .
           </motion.h1>
-          <p className="text-[20px]">
-            Our team at Design Flow focus on help you tailor your interior
-            design and home decor <br />
+          <p className="text-[18px] xl:text-[22px]">
+            Our team at Design Flow focus on help you tailor your{" "}
+            <span className="font-bold text-[#2580eb]">interior design</span>{" "}
+            and <span className="font-bold text-[#2580eb]">home decor</span>{" "}
+            <br />
             website that your clients love and trust.{" "}
           </p>
           <div className="flex flex-col items-center md:flex-row gap-10">
