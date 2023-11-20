@@ -36,6 +36,12 @@ const Gallery = () => {
           ))}
         </motion.div>
       </div>
+
+      {/* Neon Circles */}
+
+      <div className="w-[650px] h-[480px] pointer-events-none blur-[300px] bg-[#2580eb] rounded-full bg-opacity-40 absolute top-0 left-36 z-0"></div>
+      <div className="w-[650px] h-[480px] pointer-events-none blur-[300px] bg-[#D1B7F2] rounded-full bg-opacity-50 absolute top-48 left-0 z-0"></div>
+      <div className="w-[350px] h-[180px] pointer-events-none blur-[100px] bg-[#D1B7F2] rounded-full bg-opacity-50 absolute top-0 right-0 z-0"></div>
     </div>
   );
 };

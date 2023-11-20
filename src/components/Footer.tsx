@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#2580eb] text-center py-6 text-white text-lg">
+      <div className="bg-[#2580eb] text-center py-6 text-white text-md lg:text-lg">
         Copyright © Design Flow 2023 | Powered by NextJS 14
       </div>
     </footer>

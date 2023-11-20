@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Form = () => {
   const handleSubmit = (e: any) => {
@@ -10,7 +11,11 @@ const Form = () => {
 
   return (
     <section className="max-w-[1440px] mx-auto relative px-8 xl:p-0">
-      <div>
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0.5 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, ease: "easeIn" }}
+      >
         <h2 className="text-3xl font-bold text-center">
           <span className="xl:mr-40">
             Send us a <span className="text-[#2580eb]">quick</span> message,{" "}
@@ -95,7 +100,7 @@ const Form = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

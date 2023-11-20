@@ -31,3 +31,37 @@ export const fadeUpInView = (delay = 0) => ({
     delay: delay,
   },
 });
+
+export const inViewFadeDownInView = (delay = 0) => ({
+  initial: {
+    opacity: 0,
+    y: -20,
+  },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+  },
+  transition: {
+    type: "spring",
+    bounce: 0,
+    durating: 0.3,
+    delay: delay,
+  },
+});
+
+export const inViewFadeUpInView = (delay = 0) => ({
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+  },
+  transition: {
+    type: "spring",
+    bounce: 0,
+    duration: 0.3,
+    delay: delay,
+  },
+});

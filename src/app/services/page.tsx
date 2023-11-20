@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import { ServicesInfo } from "@/constants";
 import Service from "@/components/Service";
 import Form from "@/components/Form";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
+import { fadeDownInView, fadeUpInView } from "@/utils/animations";
 
 const Services = () => {
   return (
@@ -11,14 +14,23 @@ const Services = () => {
       <Banner text="Our Services" />
 
       <div className="px-8 xl:px-0">
-        <p className="text-center font-bold opacity-60 mt-24 mb-2">
+        <motion.p
+          {...fadeDownInView(0.3)}
+          className="text-center font-bold opacity-60 mt-24 mb-2"
+        >
           Our Services
-        </p>
-        <h2 className="text-center font-bold text-4xl mb-20">
+        </motion.p>
+        <motion.h2
+          {...fadeDownInView()}
+          className="text-center font-bold text-4xl mb-20"
+        >
           From Designers, For <span className="text-[#2580eb]">Designers</span>
-        </h2>
+        </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-[1200px] gap-14 mb-48">
+        <motion.div
+          {...fadeUpInView(0.5)}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-[1200px] gap-14 mb-48"
+        >
           {ServicesInfo.map((service) => (
             <Service
               key={service.title}
@@ -28,7 +40,7 @@ const Services = () => {
               linkTo={service.linkTo}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
 
       <Form />
